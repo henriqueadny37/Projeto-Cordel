@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bebas+Neue&family=Henny+Penny&family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bebas+Neue&family=Henny+Penny&family=Passion+One&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+    --fonte4: 'Passion One', cursive
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte4);
+    
+}
+header {
+    background-color: #000000;
+    color: #ffff;
+    text-align: center;
+    
+}
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte4);
+    font-size: 10vw;
+}
+header p {
+    padding-bottom: 50px;
+    font-family: var(--fonte1);
+}
+header a, footer a {
+    color: #ffff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: #ffff;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px #000000;
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(27, 26, 26, 0.582);
+    text-shadow: 1px 1px 0px #000000;
+    
+}
+
+footer {
+    background-color: #000000;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte1);
+}
